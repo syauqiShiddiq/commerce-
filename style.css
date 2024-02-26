@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-6{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-6 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-6 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.tombol{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+.header{
+    background: radial-gradient(#ffffff, #ffd6d6);
+}
+.shadow-drop-2-center :hover {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.f-col-1, .f-col-2, .f-col-3{
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+.f-col-1{
+    flex: 1;
+    text-align: center;
+}
+.f-col-1 img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.f-col-2, .f-col-3{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+
+
+/*menu media query*/
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/*Shadow Drop Animation*/
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
